@@ -13,10 +13,10 @@
       <a href="privacy.html">Privacy</a>
     </nav>
     <h1>Informativa sulla privacy</h1>
-    <p class="muted">Ultimo aggiornamento: 24 agosto 2026</p>
+    <p class="muted">Ultimo aggiornamento: 26 agosto 2026</p>
   </header>
   <main class="card">
-    <p>Funghi Meteo è un visore privato di mappe microclimatiche. L’app non crea account propri, non mostra annunci e non integra sistemi di analisi pubblicitaria.</p>
+    <p>Funghi Meteo è un visore privato di mappe microclimatiche. L’app non mostra annunci e non integra sistemi di analisi pubblicitaria. L’accesso con Google è facoltativo e serve solo a riconoscere gli account autorizzati (allowlist).</p>
 
     <h2>Localizzazione</h2>
     <p>La posizione viene richiesta soltanto quando l’utente preme il pulsante Localizza. È usata sul dispositivo per centrare la mappa, mostrare un indicatore e avvertire quando il telefono si trova fuori dall’area cartografica coperta. La posizione non viene salvata dall’app, non viene associata a un account e non viene inviata al gestore di Funghi Meteo. Le normali richieste Internet della cartografia restano separate dalla posizione GPS.</p>
@@ -29,8 +29,10 @@
     <p>Per mostrare la cartografia, i caratteri, il rilievo e le librerie del visore, l’app effettua richieste Internet verso servizi esterni usati dalla mappa, tra cui OpenFreeMap, OpenStreetMap, Amazon Web Services Open Data e unpkg. Questi fornitori possono trattare dati tecnici ordinari della connessione, come indirizzo IP, data, ora e informazioni del dispositivo, secondo le rispettive informative.</p>
     <p>La scelta e la sincronizzazione del file su Google Drive sono gestite da Android e dai servizi Google dell’account dell’utente, secondo l’informativa privacy di Google.</p>
 
+    <p>Se l’utente preme Accedi con Google, Google e Firebase Authentication ricevono l’email dell’account scelto per verificare che sia in lista. Se l’email è autorizzata e l’utente salva un luogo con la stellina, Firebase Firestore riceve id, nome, latitudine e longitudine di quel punto, per sincronizzarlo tra i telefoni autorizzati. Una cancellazione esplicita dalla lista preferiti rimuove il punto anche sul cloud. Il gestore di Funghi Meteo non vende questi dati. Se l’email non è autorizzata, l’accesso viene chiuso, non resta una sessione e i punti non vengono scritti.</p>
+
     <h2>Dati non raccolti dal gestore</h2>
-    <p>Il gestore di Funghi Meteo non raccoglie tramite l’app posizione GPS, contatti, fotografie, credenziali Google, dati pubblicitari o dati di pagamento. L’app non vende dati personali.</p>
+    <p>Il gestore di Funghi Meteo non raccoglie tramite l’app posizione GPS, contatti, fotografie, dati pubblicitari o dati di pagamento. L’app non vende dati personali.</p>
 
     <h2>Contatti</h2>
     <p>Email di supporto e privacy: <a href="mailto:gioelemassi94@gmail.com">gioelemassi94@gmail.com</a></p>
