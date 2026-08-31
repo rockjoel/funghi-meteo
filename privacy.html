@@ -36,8 +36,11 @@
 
     <p>Se l’utente preme Accedi con Google, Google e Firebase Authentication ricevono l’email dell’account scelto per verificare che sia in lista. Se l’email è autorizzata e l’utente salva un luogo con la stellina, Firebase Firestore riceve id, nome, latitudine e longitudine di quel punto, per sincronizzarlo tra i telefoni autorizzati. Una cancellazione esplicita dalla lista preferiti rimuove il punto anche sul cloud. Il gestore di Funghi Meteo non vende questi dati. Se l’email non è autorizzata, l’accesso viene chiuso, non resta una sessione e i punti non vengono scritti.</p>
 
+    <h2>Segnalazioni facoltative</h2>
+    <p>Solo quando l’utente sceglie di inviare una segnalazione, l’app può trasmettere a Firebase l’email e il nome dell’account, il testo inserito, l’eventuale posizione scelta e fino a due fotografie. Questi dati servono esclusivamente a ricevere la segnalazione o la nota del diario e non vengono venduti.</p>
+
     <h2>Dati non raccolti dal gestore</h2>
-    <p>Il gestore di Funghi Meteo non raccoglie direttamente tramite l’app posizione GPS, contatti, fotografie o dati di pagamento. L’app non vende dati personali.</p>
+    <p>Il gestore di Funghi Meteo non raccoglie contatti o dati di pagamento. La posizione usata dal tasto Localizza resta sul telefono; viene trasmessa soltanto se l’utente decide esplicitamente di includerla in una segnalazione. L’app non vende dati personali.</p>
 
     <h2>Cancellazione dell’account e dei dati</h2>
     <p>L’utente può richiedere la cancellazione dell’account Firebase e dei dati associati dalla voce «Elimina account e dati» nelle Impostazioni dell’app oppure dalla pagina pubblica <a href="elimina-account.html">Elimina account e dati</a>. La richiesta può essere inviata anche dopo aver disinstallato l’app.</p>
