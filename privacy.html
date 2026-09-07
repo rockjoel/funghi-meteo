@@ -14,7 +14,7 @@
       <a href="elimina-account.html">Elimina account</a>
     </nav>
     <h1>Informativa sulla privacy</h1>
-    <p class="muted">Ultimo aggiornamento: 1 settembre 2026</p>
+    <p class="muted">Ultimo aggiornamento: 7 settembre 2026</p>
   </header>
   <main class="card">
     <p>Funghi Meteo è un visore di mappe microclimatiche. L’accesso con Google è facoltativo e serve a riconoscere gli account autorizzati (allowlist) e sincronizzare i luoghi preferiti.</p>
@@ -27,12 +27,12 @@
     <p>La posizione viene richiesta soltanto quando l’utente preme il pulsante Localizza. È usata sul dispositivo per centrare la mappa, mostrare un indicatore e avvertire quando il telefono si trova fuori dall’area cartografica coperta. La posizione non viene salvata dall’app, non viene associata a un account e non viene inviata al gestore di Funghi Meteo. Le normali richieste Internet della cartografia restano separate dalla posizione GPS.</p>
 
     <h2>File della mappa</h2>
-    <p>Se l’utente accede con Google e l’email è in lista, l’app può scaricare da Firebase Storage lo stesso pacchetto ZIP della mappa che il PC ha caricato. Lo ZIP resta sul telefono; se non è cambiato, non viene riscaricato. Drive o una cartella locale restano scorta, tramite il selettore documenti di Android. L’app non ricalcola il meteo sul telefono. Il gestore non vende il contenuto della mappa.</p>
-    <p>L’accesso al file può essere revocato cambiando la sorgente nell’app oppure rimuovendo i relativi permessi dalle impostazioni Android. I dati locali dell’app possono essere eliminati disinstallando l’app o cancellandone i dati dalle impostazioni del telefono.</p>
+    <p>All’apertura l’app può scaricare da Firebase Storage lo stesso pacchetto ZIP della mappa preparato sul PC (anche senza Accedi, per il file pubblico della mappa). Lo ZIP resta sul telefono; se non è cambiato, non viene riscaricato. L’app non ricalcola il meteo sul telefono. Il gestore non vende il contenuto della mappa.</p>
+    <p>I dati locali dell’app possono essere eliminati disinstallando l’app o cancellandone i dati dalle impostazioni del telefono.</p>
 
     <h2>Connessioni esterne</h2>
     <p>Per mostrare la cartografia, i caratteri, il rilievo e le librerie del visore, l’app effettua richieste Internet verso servizi esterni usati dalla mappa, tra cui OpenFreeMap, OpenStreetMap, Amazon Web Services Open Data e unpkg. Questi fornitori possono trattare dati tecnici ordinari della connessione, come indirizzo IP, data, ora e informazioni del dispositivo, secondo le rispettive informative.</p>
-    <p>La scelta e la sincronizzazione del file su Google Drive sono gestite da Android e dai servizi Google dell’account dell’utente, secondo l’informativa privacy di Google.</p>
+    <p>Il download del pacchetto mappa da Firebase Storage avviene verso i servizi Google/Firebase, secondo le relative informative.</p>
 
     <p>Se l’utente preme Accedi con Google, Google e Firebase Authentication ricevono l’email dell’account scelto per verificare che sia in lista. Se l’email è autorizzata e l’utente salva un luogo con la stellina, Firebase Firestore riceve id, nome, latitudine e longitudine di quel punto, per sincronizzarlo tra i telefoni autorizzati. Una cancellazione esplicita dalla lista preferiti rimuove il punto anche sul cloud. Il gestore di Funghi Meteo non vende questi dati. Se l’email non è autorizzata, l’accesso viene chiuso, non resta una sessione e i punti non vengono scritti.</p>
 
