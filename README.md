@@ -13,4 +13,4 @@ La mappa del giorno viene preparata sul PC e letta dall’app. I colori sono **s
 
 Rispetta regole locali, proprietà private e divieti. Non consumare funghi senza identificazione da personale qualificato.
 
-Supporto: gioelemassi94@gmail.com
+Supporto: rockjoel@proton.me
