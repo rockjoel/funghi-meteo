@@ -6,7 +6,7 @@ La mappa del giorno viene preparata sul PC e letta dall’app. I colori sono **s
 
 ## Sito pubblico
 
-- Live: https://gioelemassi.github.io/funghi-meteo/
+- Live: https://rockjoel.github.io/funghi-meteo/
 - Contenuti: home + privacy
 
 ## Note
