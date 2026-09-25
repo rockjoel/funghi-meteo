@@ -26,7 +26,7 @@ Vale per **ogni** harness (Cursor, Codex, Grok Bot, Claude, Cloud, esterni).
 
 1. Se manca indice o STATO → skill `bootstrap-agentico`. Stop sul prodotto.
 2. Se c’è STATO → solo **Ripresa** in chat.
-3. Fronte chiuso → skill `github-quando` (backup su **master/main**).
+3. Fronte chiuso → skill `github-quando` (backup su **master**).
 
 Skill già fatte: indice del progetto + hub `SKILL-INSTALLATI.md`. Una riga = un file.
 
