@@ -1,43 +1,132 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-title-it="Elimina account e dati — Funghi Meteo" data-title-en="Delete account and data — Funghi Meteo">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elimina account e dati — Funghi Meteo</title>
+  <title data-title-it="Elimina account e dati — Funghi Meteo" data-title-en="Delete account and data — Funghi Meteo">Elimina account e dati — Funghi Meteo</title>
+  <meta name="description" content="Come richiedere la cancellazione dell’account e dei dati di Funghi Meteo.">
+  <meta name="theme-color" content="#3F4A2A">
+  <link rel="icon" href="img/icona-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/icona-192.png" type="image/png" sizes="192x192">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="elimina-account.html">Elimina account</a>
-    </nav>
-    <h1>Elimina account e dati</h1>
-    <p class="muted">Funghi Meteo</p>
-  </header>
-  <main class="card">
-    <h2>Come inviare la richiesta</h2>
-    <p>Invia un’email dall’indirizzo Google usato per accedere all’app. In questo modo possiamo verificare che la richiesta provenga dal titolare dell’account.</p>
-    <p><a href="mailto:rockjoel@proton.me?subject=Cancellazione%20account%20Funghi%20Meteo">Richiedi la cancellazione per email</a></p>
-    <p>Oggetto: <strong>Cancellazione account Funghi Meteo</strong>. Non inviare password, documenti d’identità o altri dati sensibili.</p>
+  <div class="band band-dark">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="img/icona-192.png" width="36" height="36" alt="Funghi Meteo">
+          <span>Funghi Meteo</span>
+        </a>
+        <nav class="nav-main" aria-label="Menu">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+          <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="it" aria-pressed="true">IT</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
 
-    <h2>Cosa viene eliminato</h2>
-    <ul>
-      <li>l’account Firebase collegato all’indirizzo Google;</li>
-      <li>la zona casa personale salvata sul cloud;</li>
-      <li>eventuali segnalazioni, testi, coordinate e fotografie associate all’account.</li>
-    </ul>
-    <p>I preferiti cloud attuali sono condivisi tra gli account autorizzati e non contengono email o identificativo utente: non possono quindi essere attribuiti a un singolo account.</p>
+    <div class="wrap page-hero">
+      <div data-lang="it">
+        <h1 class="page-title">Elimina account e dati</h1>
+        <p class="page-meta">Funghi Meteo</p>
+      </div>
+      <div data-lang="en">
+        <h1 class="page-title">Delete account and data</h1>
+        <p class="page-meta">Funghi Meteo</p>
+      </div>
+    </div>
 
-    <h2>Dati rimasti sul telefono</h2>
-    <p>I dati conservati soltanto sul dispositivo possono essere rimossi cancellando i dati di Funghi Meteo dalle impostazioni Android oppure disinstallando l’app.</p>
+    <svg class="band-wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path fill="#F7F1E8" d="M0,18 C240,42 480,46 720,28 C960,10 1200,4 1440,22 L1440,48 L0,48 Z"></path>
+    </svg>
+  </div>
 
-    <h2>Tempi</h2>
-    <p>La richiesta viene completata entro 30 giorni. Al termine viene inviata una conferma all’indirizzo del richiedente.</p>
+  <main class="band band-panna">
+    <div class="legal-col">
+      <div data-lang="it">
+        <article class="legal">
+          <section class="legal-block is-first">
+            <h2>Come inviare la richiesta</h2>
+            <p>Invia un’email dall’indirizzo Google usato per accedere all’app. In questo modo possiamo verificare che la richiesta provenga dal titolare dell’account.</p>
+            <p><a class="mailto-cta" href="mailto:rockjoel@proton.me?subject=Cancellazione%20account%20Funghi%20Meteo">Richiedi la cancellazione per email</a></p>
+            <p>Oggetto: <strong>Cancellazione account Funghi Meteo</strong>. Non inviare password, documenti d’identità o altri dati sensibili.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Cosa viene eliminato</h2>
+            <ul>
+              <li>l’account Firebase collegato all’indirizzo Google;</li>
+              <li>la zona casa personale salvata sul cloud;</li>
+              <li>eventuali segnalazioni, testi, coordinate e fotografie associate all’account.</li>
+            </ul>
+            <p>I preferiti cloud attuali sono condivisi tra gli account autorizzati e non contengono email o identificativo utente: non possono quindi essere attribuiti a un singolo account.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Dati rimasti sul telefono</h2>
+            <p>I dati conservati soltanto sul dispositivo possono essere rimossi cancellando i dati di Funghi Meteo dalle impostazioni Android oppure disinstallando l’app.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Tempi</h2>
+            <p>La richiesta viene completata entro 30 giorni. Al termine viene inviata una conferma all’indirizzo del richiedente.</p>
+          </section>
+        </article>
+      </div>
+
+      <div data-lang="en">
+        <article class="legal">
+          <section class="legal-block is-first">
+            <h2>How to send the request</h2>
+            <p>Send an email from the Google address used to sign in to the app. This way we can verify that the request comes from the account holder.</p>
+            <p><a class="mailto-cta" href="mailto:rockjoel@proton.me?subject=Funghi%20Meteo%20account%20deletion">Request deletion by email</a></p>
+            <p>Subject: <strong>Funghi Meteo account deletion</strong>. Do not send passwords, identity documents or other sensitive data.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>What is deleted</h2>
+            <ul>
+              <li>the Firebase account linked to the Google address;</li>
+              <li>the personal home zone saved on the cloud;</li>
+              <li>any reports, texts, coordinates and photographs associated with the account.</li>
+            </ul>
+            <p>Current cloud favourites are shared among authorised accounts and do not contain email or a user identifier: they therefore cannot be attributed to a single account.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Data left on the phone</h2>
+            <p>Data kept only on the device can be removed by clearing Funghi Meteo data from Android settings or by uninstalling the app.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Timing</h2>
+            <p>The request is completed within 30 days. When done, a confirmation is sent to the requester’s address.</p>
+          </section>
+        </article>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p><a href="privacy.html">Leggi l’informativa privacy</a></p>
+
+  <footer class="site-footer band band-dark">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="img/icona-192.png" width="32" height="32" alt="">
+        <span>Funghi Meteo</span>
+      </a>
+      <a href="privacy.html">Privacy</a>
+      <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+      <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+      <span data-lang="it">Supporto: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <span data-lang="en">Support: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <p class="footer-copy">© 2026 Funghi Meteo</p>
+    </div>
   </footer>
 </body>
 </html>

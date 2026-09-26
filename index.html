@@ -1,27 +1,271 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-title-it="Funghi Meteo" data-title-en="Funghi Meteo">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Funghi Meteo</title>
+  <title data-title-it="Funghi Meteo" data-title-en="Funghi Meteo">Funghi Meteo</title>
+  <meta name="description" content="Mappa microclimatica dei versanti per funghi e porcini. Oggi Appennino toscano.">
+  <meta name="theme-color" content="#3F4A2A">
+  <link rel="icon" href="img/icona-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/icona-192.png" type="image/png" sizes="192x192">
+  <meta property="og:title" content="Funghi Meteo">
+  <meta property="og:description" content="Mappa microclimatica dei versanti per funghi e porcini. Oggi Appennino toscano.">
+  <meta property="og:image" content="https://rockjoel.github.io/funghi-meteo/img/grafica.jpg">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
+  <div class="band band-dark band-hero">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="img/icona-192.png" width="36" height="36" alt="Funghi Meteo">
+          <span>Funghi Meteo</span>
+        </a>
+        <nav class="nav-main" aria-label="Menu">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+          <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="it" aria-pressed="true">IT</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="wrap hero">
+      <div class="hero-copy">
+        <div data-lang="it">
+          <h1>Funghi Meteo</h1>
+          <p class="lede">Mappa microclimatica dei versanti per funghi e porcini. Oggi Appennino toscano.</p>
+          <p class="test-line">App in fase di test su Google Play.</p>
+        </div>
+        <div data-lang="en">
+          <h1>Funghi Meteo</h1>
+          <p class="lede">Microclimate map of slopes for mushrooms and porcini. Tuscan Apennines today.</p>
+          <p class="test-line">App currently in testing on Google Play.</p>
+        </div>
+        <!-- Bottone Google Play: da aggiungere quando l'app è pubblica -->
+      </div>
+      <div class="hero-visual">
+        <img src="img/grafica.jpg" width="1024" height="500" alt="Funghi Meteo">
+      </div>
+    </section>
+
+    <svg class="band-wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path fill="#F7F1E8" d="M0,18 C240,42 480,46 720,28 C960,10 1200,4 1440,22 L1440,48 L0,48 Z"></path>
+    </svg>
+  </div>
+
+  <section class="band band-panna">
+    <div class="wrap">
+      <div data-lang="it"><h2 class="section-title">Nell’app</h2></div>
+      <div data-lang="en"><h2 class="section-title">In the app</h2></div>
+      <div class="shots">
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="img/mappa-oggi.webp" width="540" height="1200" alt="Funghi Meteo — mappa del giorno" loading="lazy">
+          </div>
+          <figcaption>
+            <span data-lang="it">Mappa del giorno</span>
+            <span data-lang="en">Today’s map</span>
+          </figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="img/mappa-giorni.webp" width="540" height="1200" alt="Funghi Meteo — timeline 7 giorni" loading="lazy">
+          </div>
+          <figcaption>
+            <span data-lang="it">Timeline di 7 giorni</span>
+            <span data-lang="en">7-day timeline</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-cream band-curves-dark">
+    <div class="wrap">
+      <div data-lang="it">
+        <h2 class="section-title">Cosa trovi nell’app</h2>
+        <ul class="feature-grid">
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6.5 9 4.5 15 6.5 20 4.5v13l-5 2-6-2-5 2z"/><path d="M9 4.5v13"/><path d="M15 6.5v13"/></svg>
+            </span>
+            <p><strong>Mappa microclimatica dei versanti:</strong> una griglia colorata sopra la carta con il rilievo, zona per zona.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></svg>
+            </span>
+            <p><strong>Timeline di 7 giorni:</strong> scorri le giornate recenti e guarda come cambiano i colori.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 4h8a2 2 0 0 1 2 2v12l-6-3-6 3V6a2 2 0 0 1 2-2z"/><path d="M10 9h4"/><path d="M10 12h3"/></svg>
+            </span>
+            <p><strong>Scheda della zona:</strong> tieni premuto su un punto della mappa per aprire la scheda con i dati di quel punto.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+            </span>
+            <p><strong>Localizza (facoltativo):</strong> trova dove sei sulla mappa, solo quando lo chiedi tu.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 12.4-5.7L19 4v6h-6"/><path d="M19.5 12a7.5 7.5 0 0 1-12.4 5.7L5 20v-6h6"/></svg>
+            </span>
+            <p><strong>Aggiornata ogni giorno:</strong> la mappa del giorno arriva da sola sul telefono, anche senza accedere. Serve Internet.</p>
+          </li>
+        </ul>
+      </div>
+      <div data-lang="en">
+        <h2 class="section-title">What you get in the app</h2>
+        <ul class="feature-grid">
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6.5 9 4.5 15 6.5 20 4.5v13l-5 2-6-2-5 2z"/><path d="M9 4.5v13"/><path d="M15 6.5v13"/></svg>
+            </span>
+            <p><strong>Microclimate map of the slopes:</strong> a coloured grid over the map with relief, zone by zone.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></svg>
+            </span>
+            <p><strong>7-day timeline:</strong> swipe recent days and watch how the colours change.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 4h8a2 2 0 0 1 2 2v12l-6-3-6 3V6a2 2 0 0 1 2-2z"/><path d="M10 9h4"/><path d="M10 12h3"/></svg>
+            </span>
+            <p><strong>Zone card:</strong> long-press a point on the map to open the card with data for that spot.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+            </span>
+            <p><strong>Locate (optional):</strong> find where you are on the map, only when you ask.</p>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 12.4-5.7L19 4v6h-6"/><path d="M19.5 12a7.5 7.5 0 0 1-12.4 5.7L5 20v-6h6"/></svg>
+            </span>
+            <p><strong>Updated every day:</strong> the day’s map arrives on the phone by itself, even without signing in. Internet is required.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-panna">
+    <div class="wrap">
+      <div data-lang="it">
+        <h2 class="section-title">Come leggere i colori</h2>
+        <div class="legend-grid">
+          <article class="legend-card legend-giallo">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Giallo (Base)</h3>
+              <p>le condizioni recenti hanno acceso il ciclo.</p>
+            </div>
+          </article>
+          <article class="legend-card legend-verde">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Verde</h3>
+              <p>il ciclo è andato avanti abbastanza da far ipotizzare funghi in terra. È un’ipotesi, non una certezza.</p>
+            </div>
+          </article>
+          <article class="legend-card legend-rosso">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Rosso (Malus)</h3>
+              <p>stress da secco, che frena la zona.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div data-lang="en">
+        <h2 class="section-title">How to read the colours</h2>
+        <div class="legend-grid">
+          <article class="legend-card legend-giallo">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Yellow (Base)</h3>
+              <p>recent conditions have started the cycle.</p>
+            </div>
+          </article>
+          <article class="legend-card legend-verde">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Green</h3>
+              <p>the cycle has gone far enough to suggest fruiting in the ground. That is a hypothesis, not a certainty.</p>
+            </div>
+          </article>
+          <article class="legend-card legend-rosso">
+            <div class="legend-bar" aria-hidden="true"></div>
+            <div class="legend-body">
+              <h3>Red (Malus)</h3>
+              <p>dry stress that holds the area back.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-cream">
+    <div class="wrap">
+      <div class="where-block">
+        <div class="where-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+        </div>
+        <div data-lang="it">
+          <h2 class="section-title">Dove funziona oggi</h2>
+          <p>Appennino toscano, dove i colori vengono verificati sul campo. Il nome pensa a tutta l’Italia: altre zone arriveranno a tappe, quando il sistema sarà tarato anche lì. Fuori da quest’area vedi la carta, ma i colori non sono ancora il prodotto finito.</p>
+        </div>
+        <div data-lang="en">
+          <h2 class="section-title">Where it works today</h2>
+          <p>The Tuscan Apennines, where the colours are checked in the field. The name looks toward all of Italy: other areas will come in steps, when the system is tuned there too. Outside this area you still see the map, but the colours are not the finished product yet.</p>
+        </div>
+      </div>
+
+      <div class="warning">
+        <div data-lang="it">
+          <div class="warning-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 21 19.5H3z"/><path d="M12 9v5"/><path d="M12 16.5h.01"/></svg>
+            <h2>Importante</h2>
+          </div>
+          <p>I colori sono stime empiriche del microclima: non sono una prova della presenza di funghi, non garantiscono il raccolto e non dicono nulla sulla commestibilità. Rispetta sempre regole locali, permessi di raccolta, proprietà private e divieti. Non mangiare funghi senza l’identificazione certa di personale qualificato.</p>
+        </div>
+        <div data-lang="en">
+          <div class="warning-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 21 19.5H3z"/><path d="M12 9v5"/><path d="M12 16.5h.01"/></svg>
+            <h2>Important</h2>
+          </div>
+          <p>The colours are empirical microclimate estimates: they are not proof that mushrooms are present, they do not guarantee a harvest, and they say nothing about edibility. Always respect local rules, picking permits, private property and bans. Do not eat mushrooms without certain identification by qualified people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer band band-dark">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="img/icona-192.png" width="32" height="32" alt="">
+        <span>Funghi Meteo</span>
+      </a>
       <a href="privacy.html">Privacy</a>
-    </nav>
-    <h1>Funghi Meteo</h1>
-  </header>
-  <main class="card">
-    <p>Funghi Meteo è un visore di mappe microclimatiche dei versanti, oggi calibrate sui porcini.</p>
-    <p>La mappa del giorno viene preparata sul PC e letta dall’app. I colori sono stime empiriche: non sono prova della presenza di funghi, né garanzia di raccolto.</p>
-    <p>Rispettare regole locali, proprietà private e divieti. Non consumare funghi senza un’identificazione certa da parte di personale qualificato.</p>
-    <p class="muted">Supporto: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></p>
-  </main>
-  <footer>
-    <p><a href="privacy.html">Informativa sulla privacy</a></p>
+      <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+      <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+      <span data-lang="it">Supporto: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <span data-lang="en">Support: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <p class="footer-copy">© 2026 Funghi Meteo</p>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,55 +1,170 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-title-it="Privacy — Funghi Meteo" data-title-en="Privacy — Funghi Meteo">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy — Funghi Meteo</title>
+  <title data-title-it="Privacy — Funghi Meteo" data-title-en="Privacy — Funghi Meteo">Privacy — Funghi Meteo</title>
+  <meta name="description" content="Informativa sulla privacy di Funghi Meteo.">
+  <meta name="theme-color" content="#3F4A2A">
+  <link rel="icon" href="img/icona-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/icona-192.png" type="image/png" sizes="192x192">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="elimina-account.html">Elimina account</a>
-    </nav>
-    <h1>Informativa sulla privacy</h1>
-    <p class="muted">Ultimo aggiornamento: 7 settembre 2026</p>
-  </header>
-  <main class="card">
-    <p>Funghi Meteo è un visore di mappe microclimatiche. L’accesso con Google è facoltativo e serve a riconoscere gli account autorizzati (allowlist) e sincronizzare i luoghi preferiti.</p>
+  <div class="band band-dark">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="img/icona-192.png" width="36" height="36" alt="Funghi Meteo">
+          <span>Funghi Meteo</span>
+        </a>
+        <nav class="nav-main" aria-label="Menu">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+          <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="it" aria-pressed="true">IT</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
 
-    <h2>Annunci pubblicitari e Consenso (Google AdMob / UMP)</h2>
-    <p>L’app può visualizzare annunci pubblicitari erogati tramite la piattaforma Google AdMob. Prima dell’erogazione di annunci personalizzati o non personalizzati nello Spazio Economico Europeo (SEE) e nel Regno Unito, l’app richiede il consenso dell’utente tramite la piattaforma Google User Messaging Platform (UMP). L’utente può rivedere, modificare o revocare le proprie preferenze in qualsiasi momento all’interno dell’app dal menu Impostazioni alla voce «Scelte privacy annunci».</p>
-    <p>Google AdMob e i suoi partner pubblicitari possono raccogliere e trattare identificatori del dispositivo (come l’ID pubblicitario Android), indirizzo IP e informazioni tecniche sull’interazione con gli annunci in conformità con le <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Norme sulla privacy e sui dati pubblicitari di Google</a>.</p>
+    <div class="wrap page-hero">
+      <div data-lang="it">
+        <h1 class="page-title">Informativa sulla privacy</h1>
+        <p class="page-meta">Ultimo aggiornamento: 7 settembre 2026</p>
+      </div>
+      <div data-lang="en">
+        <h1 class="page-title">Privacy notice</h1>
+        <p class="page-meta">Last updated: 7 September 2026</p>
+      </div>
+    </div>
 
-    <h2>Localizzazione</h2>
-    <p>La posizione viene richiesta soltanto quando l’utente preme il pulsante Localizza. È usata sul dispositivo per centrare la mappa, mostrare un indicatore e avvertire quando il telefono si trova fuori dall’area cartografica coperta. La posizione non viene salvata dall’app, non viene associata a un account e non viene inviata al gestore di Funghi Meteo. Le normali richieste Internet della cartografia restano separate dalla posizione GPS.</p>
+    <svg class="band-wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path fill="#F7F1E8" d="M0,18 C240,42 480,46 720,28 C960,10 1200,4 1440,22 L1440,48 L0,48 Z"></path>
+    </svg>
+  </div>
 
-    <h2>File della mappa</h2>
-    <p>All’apertura l’app può scaricare da Firebase Storage lo stesso pacchetto ZIP della mappa preparato sul PC (anche senza Accedi, per il file pubblico della mappa). Lo ZIP resta sul telefono; se non è cambiato, non viene riscaricato. L’app non ricalcola il meteo sul telefono. Il gestore non vende il contenuto della mappa.</p>
-    <p>I dati locali dell’app possono essere eliminati disinstallando l’app o cancellandone i dati dalle impostazioni del telefono.</p>
+  <main class="band band-panna">
+    <div class="legal-col">
+      <div data-lang="it">
+        <article class="legal">
+          <p>Funghi Meteo è un visore di mappe microclimatiche. L’accesso con Google è facoltativo e serve a riconoscere gli account autorizzati (allowlist) e sincronizzare i luoghi preferiti.</p>
 
-    <h2>Connessioni esterne</h2>
-    <p>Per mostrare la cartografia, i caratteri, il rilievo e le librerie del visore, l’app effettua richieste Internet verso servizi esterni usati dalla mappa, tra cui OpenFreeMap, OpenStreetMap, Amazon Web Services Open Data e unpkg. Questi fornitori possono trattare dati tecnici ordinari della connessione, come indirizzo IP, data, ora e informazioni del dispositivo, secondo le rispettive informative.</p>
-    <p>Il download del pacchetto mappa da Firebase Storage avviene verso i servizi Google/Firebase, secondo le relative informative.</p>
+          <section class="legal-block">
+            <h2>Annunci pubblicitari e Consenso (Google AdMob / UMP)</h2>
+            <p>L’app può visualizzare annunci pubblicitari erogati tramite la piattaforma Google AdMob. Prima dell’erogazione di annunci personalizzati o non personalizzati nello Spazio Economico Europeo (SEE) e nel Regno Unito, l’app richiede il consenso dell’utente tramite la piattaforma Google User Messaging Platform (UMP). L’utente può rivedere, modificare o revocare le proprie preferenze in qualsiasi momento all’interno dell’app dal menu Impostazioni alla voce «Scelte privacy annunci».</p>
+            <p>Google AdMob e i suoi partner pubblicitari possono raccogliere e trattare identificatori del dispositivo (come l’ID pubblicitario Android), indirizzo IP e informazioni tecniche sull’interazione con gli annunci in conformità con le <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Norme sulla privacy e sui dati pubblicitari di Google</a>.</p>
+          </section>
 
-    <p>Se l’utente preme Accedi con Google, Google e Firebase Authentication ricevono l’email dell’account scelto per verificare che sia in lista. Se l’email è autorizzata e l’utente salva un luogo con la stellina, Firebase Firestore riceve id, nome, latitudine e longitudine di quel punto, per sincronizzarlo tra i telefoni autorizzati. Una cancellazione esplicita dalla lista preferiti rimuove il punto anche sul cloud. Il gestore di Funghi Meteo non vende questi dati. Se l’email non è autorizzata, l’accesso viene chiuso, non resta una sessione e i punti non vengono scritti.</p>
+          <section class="legal-block">
+            <h2>Localizzazione</h2>
+            <p>La posizione viene richiesta soltanto quando l’utente preme il pulsante Localizza. È usata sul dispositivo per centrare la mappa, mostrare un indicatore e avvertire quando il telefono si trova fuori dall’area cartografica coperta. La posizione non viene salvata dall’app, non viene associata a un account e non viene inviata al gestore di Funghi Meteo. Le normali richieste Internet della cartografia restano separate dalla posizione GPS.</p>
+          </section>
 
-    <h2>Segnalazioni facoltative</h2>
-    <p>Solo quando l’utente sceglie di inviare una segnalazione, l’app può trasmettere a Firebase l’email e il nome dell’account, il testo inserito, l’eventuale posizione scelta e fino a due fotografie. Questi dati servono esclusivamente a ricevere la segnalazione o la nota del diario e non vengono venduti.</p>
+          <section class="legal-block">
+            <h2>File della mappa</h2>
+            <p>All’apertura l’app può scaricare da Firebase Storage lo stesso pacchetto ZIP della mappa preparato sul PC (anche senza Accedi, per il file pubblico della mappa). Lo ZIP resta sul telefono; se non è cambiato, non viene riscaricato. L’app non ricalcola il meteo sul telefono. Il gestore non vende il contenuto della mappa.</p>
+            <p>I dati locali dell’app possono essere eliminati disinstallando l’app o cancellandone i dati dalle impostazioni del telefono.</p>
+          </section>
 
-    <h2>Dati non raccolti dal gestore</h2>
-    <p>Il gestore di Funghi Meteo non raccoglie contatti o dati di pagamento. La posizione usata dal tasto Localizza resta sul telefono; viene trasmessa soltanto se l’utente decide esplicitamente di includerla in una segnalazione. L’app non vende dati personali.</p>
+          <section class="legal-block">
+            <h2>Connessioni esterne</h2>
+            <p>Per mostrare la cartografia, i caratteri, il rilievo e le librerie del visore, l’app effettua richieste Internet verso servizi esterni usati dalla mappa, tra cui OpenFreeMap, OpenStreetMap, Amazon Web Services Open Data e unpkg. Questi fornitori possono trattare dati tecnici ordinari della connessione, come indirizzo IP, data, ora e informazioni del dispositivo, secondo le rispettive informative.</p>
+            <p>Il download del pacchetto mappa da Firebase Storage avviene verso i servizi Google/Firebase, secondo le relative informative.</p>
+            <p>Se l’utente preme Accedi con Google, Google e Firebase Authentication ricevono l’email dell’account scelto per verificare che sia in lista. Se l’email è autorizzata e l’utente salva un luogo con la stellina, Firebase Firestore riceve id, nome, latitudine e longitudine di quel punto, per sincronizzarlo tra i telefoni autorizzati. Una cancellazione esplicita dalla lista preferiti rimuove il punto anche sul cloud. Il gestore di Funghi Meteo non vende questi dati. Se l’email non è autorizzata, l’accesso viene chiuso, non resta una sessione e i punti non vengono scritti.</p>
+          </section>
 
-    <h2>Cancellazione dell’account e dei dati</h2>
-    <p>L’utente può richiedere la cancellazione dell’account Firebase e dei dati associati dalla voce «Elimina account e dati» nelle Impostazioni dell’app oppure dalla pagina pubblica <a href="elimina-account.html">Elimina account e dati</a>. La richiesta può essere inviata anche dopo aver disinstallato l’app.</p>
+          <section class="legal-block">
+            <h2>Segnalazioni facoltative</h2>
+            <p>Solo quando l’utente sceglie di inviare una segnalazione, l’app può trasmettere a Firebase l’email e il nome dell’account, il testo inserito, l’eventuale posizione scelta e fino a due fotografie. Questi dati servono esclusivamente a ricevere la segnalazione o la nota del diario e non vengono venduti.</p>
+          </section>
 
-    <h2>Contatti</h2>
-    <p>Email di supporto e privacy: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></p>
+          <section class="legal-block">
+            <h2>Dati non raccolti dal gestore</h2>
+            <p>Il gestore di Funghi Meteo non raccoglie contatti o dati di pagamento. La posizione usata dal tasto Localizza resta sul telefono; viene trasmessa soltanto se l’utente decide esplicitamente di includerla in una segnalazione. L’app non vende dati personali.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Cancellazione dell’account e dei dati</h2>
+            <p>L’utente può richiedere la cancellazione dell’account Firebase e dei dati associati dalla voce «Elimina account e dati» nelle Impostazioni dell’app oppure dalla pagina pubblica <a href="elimina-account.html">Elimina account e dati</a>. La richiesta può essere inviata anche dopo aver disinstallato l’app.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Contatti</h2>
+            <p>Email di supporto e privacy: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></p>
+          </section>
+        </article>
+      </div>
+
+      <div data-lang="en">
+        <article class="legal">
+          <p>Funghi Meteo is a microclimate map viewer. Google sign-in is optional and is used to recognise authorised accounts (allowlist) and sync favourite places.</p>
+
+          <section class="legal-block">
+            <h2>Advertising and Consent (Google AdMob / UMP)</h2>
+            <p>The app may show ads served through the Google AdMob platform. Before serving personalised or non-personalised ads in the European Economic Area (EEA) and the United Kingdom, the app asks for the user’s consent through the Google User Messaging Platform (UMP). The user can review, change or revoke their preferences at any time inside the app from the Settings menu under «Ad privacy choices».</p>
+            <p>Google AdMob and its advertising partners may collect and process device identifiers (such as the Android advertising ID), IP address and technical information about interaction with ads in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google’s privacy and advertising data policies</a>.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Location</h2>
+            <p>Location is requested only when the user taps the Locate button. It is used on the device to centre the map, show an indicator and warn when the phone is outside the covered map area. The location is not saved by the app, is not linked to an account and is not sent to the Funghi Meteo operator. Ordinary map Internet requests remain separate from GPS location.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Map files</h2>
+            <p>On open the app may download from Firebase Storage the same map ZIP package prepared on the PC (also without Sign in, for the public map file). The ZIP stays on the phone; if it has not changed, it is not downloaded again. The app does not recompute weather on the phone. The operator does not sell the map content.</p>
+            <p>Local app data can be removed by uninstalling the app or clearing its data from the phone settings.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>External connections</h2>
+            <p>To show cartography, fonts, relief and viewer libraries, the app makes Internet requests to external services used by the map, including OpenFreeMap, OpenStreetMap, Amazon Web Services Open Data and unpkg. These providers may process ordinary technical connection data, such as IP address, date, time and device information, according to their respective notices.</p>
+            <p>Downloading the map package from Firebase Storage goes to Google/Firebase services, according to their notices.</p>
+            <p>If the user taps Sign in with Google, Google and Firebase Authentication receive the email of the chosen account to check that it is on the list. If the email is authorised and the user saves a place with the star, Firebase Firestore receives the id, name, latitude and longitude of that point, to sync it across authorised phones. An explicit deletion from the favourites list also removes the point on the cloud. The Funghi Meteo operator does not sell these data. If the email is not authorised, sign-in is closed, no session remains and points are not written.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Optional reports</h2>
+            <p>Only when the user chooses to send a report, the app may transmit to Firebase the account email and name, the entered text, any chosen location and up to two photographs. These data are used only to receive the report or diary note and are not sold.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Data not collected by the operator</h2>
+            <p>The Funghi Meteo operator does not collect contacts or payment data. The location used by the Locate button stays on the phone; it is transmitted only if the user explicitly chooses to include it in a report. The app does not sell personal data.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Account and data deletion</h2>
+            <p>The user can request deletion of the Firebase account and associated data from the «Delete account and data» item in the app Settings or from the public page <a href="elimina-account.html">Delete account and data</a>. The request can also be sent after uninstalling the app.</p>
+          </section>
+
+          <section class="legal-block">
+            <h2>Contacts</h2>
+            <p>Support and privacy email: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></p>
+          </section>
+        </article>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p><a href="index.html">Torna alla home</a></p>
+
+  <footer class="site-footer band band-dark">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="img/icona-192.png" width="32" height="32" alt="">
+        <span>Funghi Meteo</span>
+      </a>
+      <a href="privacy.html">Privacy</a>
+      <span data-lang="it"><a href="elimina-account.html">Elimina account</a></span>
+      <span data-lang="en"><a href="elimina-account.html">Delete account</a></span>
+      <span data-lang="it">Supporto: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <span data-lang="en">Support: <a href="mailto:rockjoel@proton.me">rockjoel@proton.me</a></span>
+      <p class="footer-copy">© 2026 Funghi Meteo</p>
+    </div>
   </footer>
 </body>
 </html>

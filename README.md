@@ -8,8 +8,8 @@ The daily map is prepared on a PC and read by the app. Colors are **empirical es
 
 - Live: https://rockjoel.github.io/funghi-meteo/
 - Contents: home + privacy + account-deletion request
-
-> Product-facing pages stay in **Italian** (app audience / privacy locale). This README is English for GitHub consistency.
+- Languages: Italian and English on the same pages (IT | EN switch)
+- Fonts: Fraunces and Figtree (SIL Open Font License 1.1), files and licenses in `fonts/`.
 
 ## Notes
 
