@@ -343,8 +343,7 @@ button:focus-visible {
 
 .shot-frame img {
   width: 100%;
-  aspect-ratio: 540 / 1200;
-  object-fit: cover;
+  height: auto;
 }
 
 .shot figcaption {
@@ -713,12 +712,12 @@ html:not(.lang-it):not(.lang-en) .band-dark [data-lang="en"] {
 
   .shot {
     flex: 0 0 auto;
-    width: 260px;
-    max-width: 260px;
+    width: 250px;
+    max-width: 250px;
   }
 
   .shot:nth-child(2) {
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
   }
 
   .feature-grid {
