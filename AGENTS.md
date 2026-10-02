@@ -6,7 +6,7 @@
 2. **Prima** di spostare anche una virgola: apri l’hub  
    `https://github.com/rockjoel/modo-agentico`  
    (clone tipico: `%USERPROFILE%\AI Projects\modo-agentico\`)  
-   e Read **`docs/METODO-GATE.md`** + **`metodo/PRINCIPI.md`**.
+   e Read **`docs/METODO-GATE.md`**. `metodo/PRINCIPI.md` solo se il tuo programma non carica già l'Always-on (Claude Code e Cursor lo caricano: non rileggerlo).
 3. **Adotta** quel metodo. Non inventare un secondo stile di lavoro.
 4. Se vuoi fare qualcosa **fuori** dal metodo → **avverti Gioele in una riga e stop**. Non procedere in silenzio.
 5. Poi leggi il resto di **questo** file e l’indice del progetto (se c’è).
